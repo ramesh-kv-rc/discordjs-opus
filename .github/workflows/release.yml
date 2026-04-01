@@ -10,17 +10,13 @@ jobs:
       fail-fast: false
       matrix:
         os: [
-          macos-14,
-          macos-15,
           macos-26,
           ubuntu-22.04,
           ubuntu-22.04-arm,
-          ubuntu-24.04,
           ubuntu-24.04-arm,
-          windows-2022,
-          windows-2025
+          ubuntu-24.04
         ]
-        node: [20, 22, 24, 25]
+        node: [20, 24, 25]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
